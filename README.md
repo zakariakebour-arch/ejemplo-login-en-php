@@ -1,5 +1,5 @@
 # ejemplo-login-en-php
 Este es un mini ejercicio en el que aplicamos registrar cuentas de usuario y contraseñas con hash y guardarlos en la base de datos.
-Es un ejemplo sencillo en el que no he aplicado buenas practicas (por ejemplo evitar inyecciones SQL),cierre de seseion..
+Es un ejemplo sencillo en el que no he aplicado buenas practicas (por ejemplo evitar inyecciones SQL),cierre de sesion..
 Pero lo esencial o la base de inicios de sesion esta aplicado correctamente, el mini proyecto es capaz de guardar y luego comparar la contraseña y buscar el correo al intentar iniciar sesion,si cumple accede a la pagina de bienvenida,gracias a $_SESSION se puede mostrar por ejemplo el correo del usuario en la bienvenida como ejemplo.
 El archivo conexion.php es el encargado de realizar la conexion a la base de datos,asi evitarmos hacerlo en cada archivo(por ejemplo al intentar cambiar un valor en la conexion tendremos que realizarlo varias veces pasando por los archivos),usando requirece_once obligamos a que si ocurre error en la conexion no continua el proceso,porque es lo mas importante la conexion a la base de datos en este ejemplo,sin ello no funcionaria nada correctamente.
